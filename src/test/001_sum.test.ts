@@ -1,4 +1,4 @@
-import sum from "../leetcode/000__exampleTest";
+import sum from "@/leetcode/000__exampleTest";
 import { assert, describe, it } from "vitest";
 
 // Only this suite (and others marked with only) are run

@@ -2,17 +2,15 @@
 
 ## Installation
 ```bash
-# development
-$ yarn install
+yarn install
 
 ```
 ## TESTING 
 ```bash
-# TESTING
-$ yarn test
+yarn test
 
 ```
-
+then press "a" for detail case test.
 
 ## function location
 
