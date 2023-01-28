@@ -1,23 +1,23 @@
 import twoSum from "../../leetcode/001_two_sum";
-import { assert, describe, it } from "vitest";
-
-describe.only("test Example 1", () => {
-  it("EXAMPLE 1", () => {
-    assert.equal(twoSum([2, 7, 11, 15], 9), [0, 1]);
-  });
+import { expect } from "vitest";
+test("two_sum_1", () => {
+  const example = twoSum([2, 7, 11, 15], 9);
+  const example_result = [0, 1];
+  expect(example).toStrictEqual(example_result);
 });
 
-describe.only("test Example 2", () => {
-  it("EXAMPLE 2", () => {
-    assert.equal(twoSum([3, 2, 4], 6), [1, 2]);
-  });
+test("two_sum_2", () => {
+  const example = twoSum([3, 2, 4], 6);
+  const example_result = [1, 2];
+  expect(example).toStrictEqual(example_result);
 });
 
-describe.only("test Example 3", () => {
-  it("EXAMPLE 3", () => {
-    assert.equal(twoSum([3, 3], 6), [0, 1]);
-  });
+test("two_sum_3", () => {
+  const example = twoSum([3, 3], 6);
+  const example_result = [0, 1];
+  expect(example).toStrictEqual(example_result);
 });
+
 // -----------------------------------------------------
 //! link: //leetcode.com/problems/two-sum/description/
 // -----------------------------------------------------

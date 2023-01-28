@@ -1,9 +1,34 @@
 const twoSum = (nums: number[], target: number): number[] => {
-  let result: number[] = [1, 2];
+  let result: number[] = [0];
+  for (let [index, num] of nums.entries()) {
+    if (result[num] !== undefined) return [result[num], index];
+    result[target - num] = index;
+  }
   //your code
   return result;
 };
 export default twoSum;
+
+// -----------------------------------------------------
+//!other example
+// -----------------------------------------------------
+// import { assert, describe, it } from "vitest";
+
+// import sum from "../../leetcode/001_two_sum";
+// test("example1", () => {
+//   const example = sum(1, 2);
+//   const example_result = 3;
+//   expect(example).toBe(example_result);
+// });
+
+// const example = twoSum([2, 7, 11, 15], 9);
+
+// -----------------------------------------------------
+
+// const sum = (a: number, b: number): number => {
+//   return a + b;
+// };
+// export default sum;
 // -----------------------------------------------------
 //! link: //leetcode.com/problems/two-sum/description/
 // -----------------------------------------------------

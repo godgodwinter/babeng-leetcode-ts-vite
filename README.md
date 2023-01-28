@@ -10,6 +10,11 @@ yarn install
 yarn test
 
 ```
+## TESTING per file example (on windows) // if using linux just remove .\ 
+```bash
+yarn vitest related .\src\leetcode\000__exampleTest.ts .\src\test\000_exampleTest.test.ts
+
+```
 then press "a" for detail case test.
 
 ## function location
