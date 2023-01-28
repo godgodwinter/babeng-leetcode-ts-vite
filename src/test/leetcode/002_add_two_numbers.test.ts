@@ -52,7 +52,7 @@ dummyOne.val = 2;
 dummyOne.next = dummyTwo;
 sample[0].input1 = dummyOne;
 
-let input2Dummy1 = new ListNode(0);
+let input2Dummy1 = new ListNode();
 let input2Dummy2 = new ListNode();
 let input2Dummy3 = new ListNode();
 input2Dummy1.val = 4;
@@ -62,7 +62,7 @@ input2Dummy3.val = 5;
 input2Dummy3.next = input2Dummy2;
 sample[0].input2 = input2Dummy3;
 
-let result1 = new ListNode(0);
+let result1 = new ListNode();
 let result2 = new ListNode();
 let result3 = new ListNode();
 result1.val = 8;
