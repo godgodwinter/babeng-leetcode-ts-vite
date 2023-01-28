@@ -18,6 +18,17 @@ test("two_sum_3", () => {
   expect(example).toStrictEqual(example_result);
 });
 
+test("two_sum_4", () => {
+  const example = twoSum([0, 4, 3, 0], 0);
+  const example_result = [0, 3];
+  expect(example).toStrictEqual(example_result);
+});
+test("two_sum_5", () => {
+  const example = twoSum([2, 4, 11, 3], 6);
+  const example_result = [0, 1];
+  expect(example).toStrictEqual(example_result);
+});
+
 // -----------------------------------------------------
 //! link: //leetcode.com/problems/two-sum/description/
 // -----------------------------------------------------

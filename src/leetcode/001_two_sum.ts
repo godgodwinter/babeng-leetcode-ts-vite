@@ -1,10 +1,33 @@
 const twoSum = (nums: number[], target: number): number[] => {
-  let result: number[] = [0];
-  for (let [index, num] of nums.entries()) {
-    if (result[num] !== undefined) return [result[num], index];
-    result[target - num] = index;
-  }
   //your code
+  let result: number[] = [];
+  // console.log(nums.entries());
+  for (const [index, element] of nums.entries()) {
+    for (const [indexSecond, elementSecond] of nums.entries()) {
+      // console.log(index, element);
+      // console.log(indexSecond, elementSecond);
+      if (target === element + elementSecond) {
+        if (index != indexSecond) {
+          result = [indexSecond, index];
+        }
+        break;
+      }
+    }
+  }
+  // nums.forEach((itemFirst, indexFirst) => {
+  //   nums.forEach((itemTwo, indexTwo) => {
+  //     if (target === itemFirst + itemTwo) {
+  //       result = [indexFirst, indexTwo];
+  //     }
+  //   });
+  // });
+  // for (let [index, num] of nums.entries()) {
+  //   if (result[num] !== undefined) return [result[num], index];
+  //   result[target - num] = index;
+  // }
+  // console.log("====================================");
+  // console.log(result);
+  // console.log("====================================");
   return result;
 };
 export default twoSum;
