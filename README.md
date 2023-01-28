@@ -29,3 +29,10 @@ $ @/leetcode/*.ts
 ```bash
 $ @/test/leetcode/*.ts
 ```
+
+
+## LINK'S 
+```bash
+https://leetcode.com/problemset/all/
+
+```

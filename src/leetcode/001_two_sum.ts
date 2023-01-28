@@ -1,3 +1,4 @@
+// !SOLUSTION
 const twoSum = (nums: number[], target: number): number[] => {
   //your code
   let result: number[] = [];
@@ -14,22 +15,46 @@ const twoSum = (nums: number[], target: number): number[] => {
       }
     }
   }
-  // nums.forEach((itemFirst, indexFirst) => {
-  //   nums.forEach((itemTwo, indexTwo) => {
-  //     if (target === itemFirst + itemTwo) {
-  //       result = [indexFirst, indexTwo];
-  //     }
-  //   });
-  // });
-  // for (let [index, num] of nums.entries()) {
-  //   if (result[num] !== undefined) return [result[num], index];
-  //   result[target - num] = index;
-  // }
+
   // console.log("====================================");
   // console.log(result);
   // console.log("====================================");
   return result;
 };
+
+// !SOLUSTION 2
+// function twoSum(numbers: number[], target: number): number[] {
+//   let x = 0;
+//   let i = 1;
+//   while (numbers[x] + numbers[i] !== target) {
+//     if (i == numbers.length) {
+//       x++;
+//       i = x;
+//     }
+//     i++;
+//   }
+//   return [x, i];
+// }
+// console.log("====================================");
+// console.log("====================================");
+// console.log("====================================");
+
+// nums.forEach((itemFirst, indexFirst) => {
+//   nums.forEach((itemTwo, indexTwo) => {
+//     if (target === itemFirst + itemTwo) {
+//       result = [indexFirst, indexTwo];
+//     }
+//   });
+// });
+// for (let [index, num] of nums.entries()) {
+//   if (result[num] !== undefined) return [result[num], index];
+//   result[target - num] = index;
+// }
+// console.log("====================================");
+// console.log(result);
+// console.log("====================================");
+//   return result;
+// };
 export default twoSum;
 
 // -----------------------------------------------------
