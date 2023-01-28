@@ -12,3 +12,17 @@ $ yarn install
 $ yarn test
 
 ```
+
+
+## function location
+
+```bash
+$ @/leetcode/*.ts
+```
+
+
+## testing case location 
+
+```bash
+$ @/test/leetcode/*.ts
+```
